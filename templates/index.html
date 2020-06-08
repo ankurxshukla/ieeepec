@@ -18,9 +18,14 @@
             <p class="lead">Using this tool you can accurately classify your resume into various categories.</p>
         </div>
         <div style="margin-left: 25%; margin-right: 25%; margin-top: 5%; margin-bottom: 10%;">
-            <form class="needs-validation" action="upload_resume">
-              <button class="btn btn-primary btn-lg btn-block" type="submit">Upload your resume</button>
+            <form id="form" class="needs-validation" action="upload_resume" method = "POST" enctype = "multipart/form-data">
+                <button id="file" class="btn btn-primary btn-lg btn-block" type="submit">Upload your resume</button>
             </form>
           </div>
     </body>
+    <script>
+        document.getElementById("file").onchange = function() {
+            document.getElementById("form").submit();
+        };
+    </script>
 </html>
