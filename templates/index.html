@@ -19,7 +19,16 @@
         </div>
         <div style="margin-left: 25%; margin-right: 25%; margin-top: 5%; margin-bottom: 10%;">
             <form id="form" class="needs-validation" action="upload_resume" method = "POST" enctype = "multipart/form-data">
-                <button id="file" class="btn btn-primary btn-lg btn-block" type="submit">Upload your resume</button>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="upload_title">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                      <input name='file' type="file" class="custom-file-input" id="file"
+                        aria-describedby="upload_title">
+                      <label class="custom-file-label" for="file">Choose file</label>
+                    </div>
+                  </div>
             </form>
           </div>
     </body>

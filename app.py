@@ -11,8 +11,8 @@ def func():
 def upload_resume():
     if request.method == 'POST':
       f = request.files['file']
-      f.save(secure_filename(f.filename))
-      return 'file uploaded successfully'
+      f.save(f.filename)
+      return f.filename
 
 if __name__ == "__main__":
     app.run(debug=True)
