@@ -4,7 +4,7 @@ from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
 from nltk.tokenize import RegexpTokenizer
 from sklearn.preprocessing import LabelEncoder
-import keras
+import tensorflow.keras as keras
 
 sw = set(stopwords.words('english'))
 
