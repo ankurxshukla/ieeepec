@@ -25,7 +25,7 @@ def upload_resume():
             raw = parser.from_file(f)
             return classify.predict(raw['content'])
     else:
-        return 'error'        
+        return 'error'
 
 if __name__ == "__main__":
     app.run(debug=True)
