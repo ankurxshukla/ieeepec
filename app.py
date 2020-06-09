@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from docx import Document
-from tika import parser
 import classify
+import pdftotext
 
 app = Flask(__name__)
 
@@ -22,8 +22,8 @@ def upload_resume():
                 text += para.text
             return classify.predict(text)
         else:
-            raw = parser.from_file(f)
-            return classify.predict(raw['content'])
+            pdf = pdftotext.PDF(f)
+            return classify.predict(pdf)
     else:
         return 'error'
 
