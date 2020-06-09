@@ -52,7 +52,7 @@ html = """
             <h1 class="display-4">Resume Classifier</h1>
             <p class="lead">Using this tool you can accurately classify your resume into various categories.</p>
         </div>
-        <div style="margin-left: 25%; margin-right: 25%; margin-top: 5%; margin-bottom: 10%;">
+        <div style="margin-left: 25%; margin-right: 25%; margin-top: 5%;">
             <form id="form" class="needs-validation" action="upload_resume" method = "POST" enctype = "multipart/form-data">
                 <div class="input-group">
                     <div class="input-group-prepend">
@@ -67,7 +67,7 @@ html = """
             </form>
           </div>
     </body>
-    <div style="margin-left: 25%; margin-right: 25%; margin-top: 2%; text-align: center;">
+    <div style="margin-left: 25%; margin-right: 25%; margin-top: 5%; text-align: center; margin-bottom: 10%;">
         <h2 class="display-5">Predicted Class:</h2>
         <p class="lead">#result#</p>
     </div>
