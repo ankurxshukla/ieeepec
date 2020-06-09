@@ -79,5 +79,9 @@ html = """
 </html>
 """
 
+@app.route('/project_details')
+def project_details():
+    return render_template('project-details.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
