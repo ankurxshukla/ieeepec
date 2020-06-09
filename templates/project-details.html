@@ -31,9 +31,44 @@
             <h3 class="display-5">Technology Stack</h3>
             <p>This section thoroughly explains the technologies used and the reason for choosing them. All the technologies used are open source.<br>
                 <ol>
-                    <h5><li>Python:</h5>There is no denying that Python is so far the best language to be used for machine learning tasks, and since this is majorly a machine learning problem, we used Python as the main language.</li>
+                    <h5><li>Python (Programming Language):</h5>There is no denying that <a href="https://www.python.org/">Python</a> is so far the best language to be used for machine learning tasks, and since this is majorly a machine learning problem, we used Python as the main language. Python is also very commonly used as a web development language. Frameworks like <a href="https://www.djangoproject.com/">Django</a> and <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a> are based on Python. In this project we used <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a> as the backend framework, explaination of which is provided later.</li>
+                    <br><br>
                     
-                    </ol>
+                    <h5><li>Flask (Web Framework):</h5><a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a> is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions. However, Flask supports extensions that can add application features as if they were implemented in Flask itself. Extensions exist for object-relational mappers, form validation, upload handling, various open authentication technologies and several common framework related tools. Extensions are updated far more frequently than the core Flask program. ~<a href="https://en.wikipedia.org/wiki/Flask_%28web_framework%29">Wikipedia</a><br><br>
+                        The major reason for using flask was its lightweight nature. We had to build a prototype that is easy to code yet functions good. Flask matches all the criteria we needed in a web framework. Flask makes backend deployment really easy and fast. Its powerful enough to be used in live apps. Companies like Pinterest and LinkedIn use Flask as a backend for their websites.</li> 
+                    <br><br>
+                    
+                    <h5><li>Heroku (Deployment):</h5><a href="https://www.heroku.com/">Heroku</a> is a cloud platform as a service (PaaS) supporting several programming languages. One of the first cloud platforms, Heroku has been in development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure, Python, PHP, and Go. For this reason, Heroku is said to be a polyglot platform as it has features for a developer to build, run and scale applications in a similar manner across most languages. ~<a href="https://en.wikipedia.org/wiki/Heroku">Wikipedia</a><br><br>
+                        We preferred Heroku beacuse it is most commonly used Open Source platform for deploying web apps. It offers very fast deployment methods and easy error logging. Heroku offers upto 500 megabytes of deplyment storage in free accounts.    
+                    </li>
+                    <br><br>
+                    
+                    <h5><li>Bootstrap (CSS):</h5><a href="https://getbootstrap.com/">Boootstrap</a> offers really quick and beautiful methods for creating front-end of web apps.
+                    </li>
+                    <br><br>
+
+                    <h5><li>Keras (Machine Learning Framework):</h5><a href="https://keras.io/">Keras</a> is an open-source neural-network library written in Python. It is capable of running on top of TensorFlow, Microsoft Cognitive Toolkit, R, Theano, or PlaidML. Designed to enable fast experimentation with deep neural networks, it focuses on being user-friendly, modular, and extensible. It was developed as part of the research effort of project ONEIROS (Open-ended Neuro-Electronic Intelligent Robot Operating System). ~<a href="https://en.wikipedia.org/wiki/Keras">Wikipedia</a><br><br>
+                        Its lightweight nature was the major motivation for choosing this framework. We wanted to deploy our model to web and to do so we needed a framework that does not consumes much server space, since as mentioned earlier, Heroku offers only 500 megabytes of storage space. There were two other options - Tensorflow and PyTorch, but due to their large size, they were discarded. Also it was not wise to waste space on framework components that are of no use to the app. The following image shows the model architecture.    
+                    </li>
+                    <br><br>
+
+                    <h5><li>PyPDF2 (Parse pdf File):</h5><a href="https://pypi.org/project/PyPDF2/">PyPDF2</a> is used to work with pdf files. It is used to read the document , split pdfs page by page, extract document information and more.
+                    </li>
+                    <br><br>
+
+                    <h5><li>NumPy:</h5><a href="https://numpy.org/">NumPy</a> is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. The ancestor of NumPy, Numeric, was originally created by Jim Hugunin with contributions from several other developers. In 2005, Travis Oliphant created NumPy by incorporating features of the competing Numarray into Numeric, with extensive modifications. NumPy is open-source software and has many contributors. ~<a href="https://en.wikipedia.org/wiki/NumPy">Wikipedia</a>
+                    </li>
+                    <br><br>
+
+                    <h5><li>NLTK (Language Processing):</h5><a href="https://www.nltk.org/">NLTK</a> library is used to preprocess the text before feeding it into the neural network. It has a pretty good collection of stop words and which removes redundant text from the input.
+                    </li>
+                    <br><br>
+
+                    <h5><li>Pandas (Reading datasets):</h5>We have used <a href="https://pandas.pydata.org/">Pandas</a> library to read csv files which contained the training data for the application.
+                    </li>
+                    <br><br>
+                    
+                </ol>
             </p>
         </div>
         
