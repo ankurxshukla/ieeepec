@@ -4,7 +4,9 @@ from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
 from nltk.tokenize import RegexpTokenizer
 from sklearn.preprocessing import LabelEncoder
-import tensorflow.keras as keras
+import os
+os.environ['KERAS_BACKEND'] = 'theano'
+import keras
 
 sw = set(stopwords.words('english'))
 
