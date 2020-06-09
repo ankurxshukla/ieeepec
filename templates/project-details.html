@@ -48,7 +48,8 @@
                     <br><br>
 
                     <h5><li>Keras (Machine Learning Framework):</h5><a href="https://keras.io/">Keras</a> is an open-source neural-network library written in Python. It is capable of running on top of TensorFlow, Microsoft Cognitive Toolkit, R, Theano, or PlaidML. Designed to enable fast experimentation with deep neural networks, it focuses on being user-friendly, modular, and extensible. It was developed as part of the research effort of project ONEIROS (Open-ended Neuro-Electronic Intelligent Robot Operating System). ~<a href="https://en.wikipedia.org/wiki/Keras">Wikipedia</a><br><br>
-                        Its lightweight nature was the major motivation for choosing this framework. We wanted to deploy our model to web and to do so we needed a framework that does not consumes much server space, since as mentioned earlier, Heroku offers only 500 megabytes of storage space. There were two other options - Tensorflow and PyTorch, but due to their large size, they were discarded. Also it was not wise to waste space on framework components that are of no use to the app. The following image shows the model architecture.    
+                        Its lightweight nature was the major motivation for choosing this framework. We wanted to deploy our model to web and to do so we needed a framework that does not consumes much server space, since as mentioned earlier, Heroku offers only 500 megabytes of storage space. There were two other options - Tensorflow and PyTorch, but due to their large size, they were discarded. Also it was not wise to waste space on framework components that are of no use to the app. The following image shows the model architecture.<br><br>
+                        <img src="arch.jpg">
                     </li>
                     <br><br>
 
@@ -66,9 +67,16 @@
 
                     <h5><li>Pandas (Reading datasets):</h5>We have used <a href="https://pandas.pydata.org/">Pandas</a> library to read csv files which contained the training data for the application.
                     </li>
-                    <br><br>
                     
                 </ol>
+            </p>
+        </div>
+
+        <div style="margin-left: 5%; margin-right: 5%; margin-top: 2%;">
+            <h3 class="display-5">Results</h3>
+            <p>The Jupyter Notebook is available <a href="https://colab.research.google.com/drive/1ufkqUljFc9RVqPPHMn7XP5o7r4Ph4xIk?usp=sharing">here</a>. The dataset consists of 5 classes: Computer Science (71 samples), Chemical (35 samples), Mechanical (39 samples), Electrical (39 samples) and  Finance (38 samples). The dataset was manually generated thorugh web scraping. NLTK was used to remove stopwords and to convert the dataset into feature vectores. Furthermore, the model was trained over the dataset for 15 iterations.<br><br>
+                The following plot was obtained:<br><br>
+                <img src="result.jpg" alt="result">
             </p>
         </div>
         
