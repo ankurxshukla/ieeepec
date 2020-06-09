@@ -40,4 +40,5 @@ def predict(doc):
         if word in vocab.keys():
             doc_array[0, vocab[word]] += 1
     y = model.predict(doc_array)
+    print(y)
     return classes[np.argmax(y)]
