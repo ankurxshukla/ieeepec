@@ -24,7 +24,7 @@ def my_tokenizer(document):
         words[i] = ps.stem(words[i])
     return words
 
-model = keras.models.load_model('/ieeepec.h5')
+model = keras.models.load_model('./ieeepec.h5')
 model.load_weights('./ieeepec_weights.h5')
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
