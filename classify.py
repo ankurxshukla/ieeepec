@@ -6,6 +6,7 @@ from nltk.tokenize import RegexpTokenizer
 from sklearn.preprocessing import LabelEncoder
 import numpy as np
 import os
+from tika import parser
 os.environ['KERAS_BACKEND'] = 'theano'
 import keras
 nltk.download('stopwords')
