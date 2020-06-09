@@ -53,7 +53,7 @@ html = """
             <p class="lead">Using this tool you can accurately classify your resume into various categories.</p>
         </div>
         <div style="margin-left: 25%; margin-right: 25%; margin-top: 5%;">
-            <form id="form" class="needs-validation" action="upload_resume" method = "POST" enctype = "multipart/form-data">
+            <form id="form" class="needs-validation" action="result" method = "POST" enctype = "multipart/form-data">
                 <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="upload_title">Upload</span>
