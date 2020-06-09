@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from docx import Document
 import classify
-import pdftotext
+import PyPDF2
 
 app = Flask(__name__)
 
@@ -22,8 +22,13 @@ def upload_resume():
                 text += para.text
             return classify.predict(text)
         else:
-            pdf = pdftotext.PDF(f)
-            return classify.predict(pdf)
+            pdfReader = PyPDF2.PdfFileReader(f)
+            count = pdfReader.numPages
+            text = ""
+            for i in range(count):
+                page = pdfReader.getPage(i)
+                text += page.extractText()
+            return classify.predict(text)
     else:
         return 'error'
 
