@@ -7,6 +7,8 @@ from sklearn.preprocessing import LabelEncoder
 import os
 os.environ['KERAS_BACKEND'] = 'theano'
 import keras
+nltk.download('stopwords')
+nltk.download('punkt')
 
 sw = set(stopwords.words('english'))
 
